@@ -4,6 +4,9 @@
 ## 言語
 Java, Python, PHP, C, JavaScript, VB, Perl, Shell
 
+## FW
+FuelPHP
+
 ## データベース
 Oracle 11, Oracle 12c, MysQL
 
@@ -11,19 +14,22 @@ Oracle 11, Oracle 12c, MysQL
 Windows, MacOS, Linux
 
 ## AWS
-EC2, ECS(Fargate), ECR, S3, Lambda, CloudWatch, SNS, Route 53, CodeDeploy, RDS
+EC2, ECS(Fargate), ECR, S3, Lambda, CloudWatch, SNS, Route 53, CodeDeploy, RDS, AWS Simple System Manager, IAM
 
 ## インフラ
-Docker, Terraform
+Docker, Terraform, Fluentd, Mackerel
 
 ## CI/CD
 Jenkins, CircleCI, Coverity. serverlessframework
 
 ## IDE
-Visual Studio Code, Eclipses
+Visual Studio Code, Eclipse
+
+## プロジェクト管理
+JIRA, Redmine
 
 ## その他
-Slack, Microsoft Teams, Git, Github, Gitlab, Subversion, JIRA, Redmine
+fluentd, shellcheck, Slack APP, Git, Github, Gitlab, Subversion
 
 # プライベートで使用した技術
 
@@ -31,7 +37,7 @@ Slack, Microsoft Teams, Git, Github, Gitlab, Subversion, JIRA, Redmine
 Ruby
 
 ## AWS
-Cloud9, APIGateway
+Cloud9, APIGateway, ElastiCache, CodeBuild, CodePipeline
 
 ## CI/CD
 Github Actions
