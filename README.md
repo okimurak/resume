@@ -13,13 +13,13 @@
 ### 言語
 
 - Python
-  - バッチ開発のために 2 年経験。
+  - バッチ開 (AWS Lambda 含む)のために 2 年経験
 - Java
   - フロントエンド(Java FX)、バックエンド開発のために 5 年経験
 - PHP
   - バックエンド開発のため 1 年経験。FW は FuelPHP を利用
 - JavaScript
-  　- フロントエンド開発のために 1 年ほど経験。jQuery, Backbone.js を利用
+  　- フロントエンド開発、AWS Lambda のバッチ開発のために 計 1 年ほど経験。jQuery, Backbone.js を利用
 - VB
   - SIer 時代に、業務改善のために半年ほど経験
 - Shell
@@ -40,41 +40,43 @@
 
 #### AWS
 
-以下のマネージドサービスを実務にて経験。（Terraform や Codenize ツールでコード化）
+以下のマネージドサービスを実務にて経験。（Terraform や Codenize ツールを用いてコード化）
 
 - EC2
 - ECS(Fargate)
 - ECR
 - S3
 - Lambda
-  - コードは、Python3.7, JavaScript を利用
+  - Python3.7, JavaScript を言語として利用
 - CloudWatch
 - SNS
+- SES
 - Route 53
 - CodeDeploy
 - RDS
 - AWS Simple System Manager
+  - パラメータストアを主に
 - IAM
 
 ### その他
 
-- serverelessframework
-  - AWS Lambda のデプロイに利用
 - Github, Gitlab
 - CircleCI
+- serverlessframework
+  - AWS Lambda のデプロイに利用
 - Coverity
   - SIer 時代に、Java の静的コード解析
 
 ## 自分の強み
 
 - 面白そうと思ったことに対して、すぐに実践
-- カイゼン活動。無理はしない。
+- カイゼン活動。無理・強要はしない。
 - やったことがないもの（技術によらず）への興味
 
 ## 興味があるもの
 
 - Kurbernetes を使った実務でのインフラ構築
-- サーバサイド開発
+- マイクロサービス
 - OSS へのコントリビュート
 
 ## 職務経歴
@@ -95,17 +97,18 @@
   - バックエンド開発
   - 実装
   - テストケース作成とテスト
-  - DX 向上施策
-  - Github + CircleCI 使った CI/CD 環境の構築
+  - CI/CD
+    - Github + CircleCI を用いて、デプロイを自動化
 
 - SSP の開発・運用
   - Java8, Python3.7, JavaScript を使用
-  - オンプレから AWS への移行(インフラエンジニア寄り)
+  - オンプレミスから AWS への移行
+    - 移行調査
     - 技術選定
     - サービスアーキテクチャ検討
     - インフラストラクチャ設計
-
-#### 担当業務
+    - インフラストラクチャ構築
+    - CI/CD
 
 ### 2015/04 - 2019/03: メーカー系 SIer
 
@@ -128,6 +131,8 @@
   - リリース
   - 2017/04 から監視アプリケーションのリーダーを担当
   - DX 向上のために Git + Jenkins + Coverity による継続的デプロイ環境の導入提案、構築
+  - 客先デプロイ環境の自動化
+    - Python を用いてバッチ作成
 
 ## 業務外活動
 
@@ -143,10 +148,11 @@
 - JAWS-UG
 - Terraform Meetup
 - Infra Study Meetup
+- CircleCI Meetup
 
 ## 参考
 
-職務経歴書を作成するにあたり、参考にした資料
+職務経歴書を作成するにあたり、参考にさせていただいた資料
 
 - [職務経歴書 · kwappa on the net](https://kwappa.github.io/logs/resume/)
 - [okohs/Curriculum-Vitae-template](https://github.com/okohs/Curriculum-Vitae-template)
