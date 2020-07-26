@@ -2,12 +2,12 @@
 
 ## 基本情報
 
-| 項目    | 内容                                      |
-| ------- | ----------------------------------------- |
-| 名前    | 沖村　光一郎(Koichiro Okimura)            |
-| Blog    | [@okky_eng](https://okimurak.github.io/)  |
-| Twitter | [@okky_eng](https://twitter.com/okky_eng) |
-| Qiita   | [@okky_eng](https://qiita.com/okky_eng)   |
+| 項目    | 内容                                                       |
+| ------- | ---------------------------------------------------------- |
+| 名前    | 沖村　光一郎(Koichiro Okimura)                             |
+| Blog    | [https://okimurak.github.io/](https://okimurak.github.io/) |
+| Twitter | [@okky_eng](https://twitter.com/okky_eng)                  |
+| Qiita   | [@okky_eng](https://qiita.com/okky_eng)                    |
 
 ## スキル
 
