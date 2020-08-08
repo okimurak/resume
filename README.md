@@ -107,15 +107,15 @@
     - テストケース作成とテスト
   - CI/CD の導入
     - 手動シェル実行リリースから Github + CircleCI + Slack を用いた自動ビルド・デプロイ
-    - 動かないテストコードの改修
+    - 動かないテストコードの改修と自動テスト
   - 監視設計
-    - アラートなしから Fluentd + CloudWatchLogs + Lambda + Slack を用いたアラート通知
+    - アプリケーションログを監視しておらず、クリティカルなエラーに気づけなかったため Fluentd + CloudWatchLogs + Lambda + Slack を用いたアプリケーションログ監視を設計・構築
 
 - SSP の開発・運用
   - バックエンドは Java8, Python3.7, フロントエンドは JavaScript を使用
   - インフラは CentOS(VM) + MySQL(VM), AWS(S3, SES, Lambda)
-  - AWS アカウントのスイッチロール対応
-  - TLS 1.2 用リバースプロキシ構築
+  - AWS のマルチアカウントのマルチアカウントを採用するため、スイッチロールを用いたアカウント切り替え対応
+  - TLS 1.2 へ対応するため、リバースプロキシの構築
   - オンプレミスから AWS への移行
     - バッチの移行
       - 現行仕様調査
@@ -181,13 +181,6 @@
 | Oracle Master Bronze(11b)                   | 2015/10    |
 | 情報処理安全確保支援士                      | 2016/07    |
 | AWS 認定ソリューションアーキテクト          | 2020/06    |
-
-### イベントへの参加
-
-- JAWS-UG
-- Terraform Meetup
-- Infra Study Meetup
-- CircleCI Meetup
 
 ## 参考
 
