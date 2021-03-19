@@ -2,72 +2,134 @@
 
 ## 基本情報
 
-| 項目     | 内容                                                       |
-| -------- | ---------------------------------------------------------- |
-| 名前     | 沖村　光一郎(Koichiro Okimura)                             |
-| Blog     | [https://okimurak.github.io/](https://okimurak.github.io/) |
-| Twitter  | [@okky_eng](https://twitter.com/okky_eng)                  |
-| Qiita    | [@okky_eng](https://qiita.com/okky_eng)                    |
-| LinkedIn | [Koichiro Okimura](www.linkedin.com/in/okimurak)           |
+| 項目   | 内容                                                                                                             |
+| ------ | ---------------------------------------------------------------------------------------------------------------- |
+| 名前   | 沖村　光一郎(Koichiro Okimura)                                                                                   |
+| Email  | [okimurak0901@gmail.com](mailto:okimurak0901@gmail.com)                                                          |
+| Blog   | [https://okimurak.github.io/](https://okimurak.github.io/), Qiita : [@okky_eng](https://qiita.com/okky_eng)      |
+| Github | [okimurak](https://github.com/okimurak)                                                                          |
+| SNS    | Twitter : [@okky_eng](https://twitter.com/okky_eng), LinkedIn : [okimurak](https://www.linkedin.com/in/okimurak) |
+
+## 職務経歴
+
+### 2019/04 - 現在 : インターネット広告系企業
+
+職位 : Web エンジニア
+
+#### SSP のクラウド移行
+
+##### 役割
+
+- クラウド移行後の技術選定・設計・構築
+- CI/CD パイプラインの構築
+- スケジュール・タスク管理
+
+##### 環境
+
+- バックエンドは Java8, Python3.7, フロントエンドは JavaScript
+- インフラは オンプレミスが CentOS(VM) + MySQL(VM), Mackerel,移行先は ECS, EFS, Aurora, Lambda, S3, API Gateway, Route53, SES, CloudWatch, SSM Parameter Store, Fastly, datadog
+
+##### 実績・ポイント
+
+- 移行先のインフラ環境は再現性を持たせるために Terraform を使ってコード化をしました。
+- 業務アプリケーションは Docker 化して ECS へ移行しています。
+- Github + CircleCI を用いた CI/CD パイプラインを作成し、GitOps のビルド・デプロイフローを構築しています。
+- Lambda は 上記に加えて serverless framework を用いてデプロイしています。
+
+#### SSP の商材管理システムの開発・運用
+
+PMP(Private Marcket Place) で用いる商材情報を管理するためのシステムの追加開発・保守を担当しました。
+
+##### 役割
+
+- 要件定義、設計、開発、テスト、レビュー、リリース
+- スケジュール・タスク管理・オフショアとの調整
+
+##### 環境
+
+- アプリケーションのバックエンドは PHP7.0(FuelPHP), フロントエンドは JavaScript(jQuery, Backbone.js), Shell
+- インフラは EC2 + CLB, RDS(MySQL), Lambda, SES, CloudWatch, Mackerel
+
+##### 実績・ポイント
+
+- 追加機能開発に要件定義からリリースまで一気通貫で担当しました。
+- オフショア（ベトナム）を利用し、英語でコミュニケーションを取っていました。
+- 手動手順だったデプロイを Github + CircleCI + CodeDeploy を用いた CI/CD パイプラインを作成し、GitOps のビルド・デプロイフローを構築しました。
+- アプリケーションログを監視しておらず、クリティカルなエラーに気づけなかったため Fluentd + CloudWatch Logs + Lambda + Slack を用いたアプリケーションログ監視を設計・構築しました。
+
+### 2015/04 - 2019/03: メーカー系 SIer
+
+職務: システムエンジニア
+
+#### 担当プロジェクトと業務
+
+#### 2016/04 - 2019/03 : 官公庁向けプロジェクトのリプレイス
+
+システムエンジニアとして通信指令システムのリプレイスプロジェクトに参画し、外部設計からリリースまでを担当しました。画面設計、テスト、リリースについては全システムを担当しました。また、詳細設計、実装については他システムで発生した障害情報を収集する監視機能や、リモートで各サーバや端末を操作する運用管理機能を持った運用監視システムのリーダーを担当しました。
+
+##### 役割
+
+- システム全体の画面設計
+- 運用監視システムリーダー
+  - 詳細設計、 開発、テスト、レビュー、リリース
+  - スケジュール・タスク管理
+
+##### 環境
+
+- バックエンドは Java8, フロントエンドは Java FX, バッチは Shell, Python3.2
+- インフラはサーバに RHEL7, Windows Server 2016, クライアントに Windows 10 Enterprise, DB は Oracle 12c
+- 開発規模は 100 名 (チーム規模 4 名, 10 チーム)
+
+##### 実績・ポイント
+
+- お客様との要件齟齬を防ぐため、プロトタイプを開発しながら要件・機能確認を繰り返し行う形で進めました。
+  - Java FX による UI のモックを作成して画面設計を行い、お客様と調整を行いました。またその後に、内部ロジックを追加してお客様にデモを行いながら機能確認と追加改修を行いました。
+- 開発業務効率化のため、ソースコードについては Subversion から Git + Jenkins + Coverity による継続的デプロイ環境の導入提案、構築を行いました。
+
+#### 2015/07 - 2016/03 : 官公庁向けプロジェクトのサーバ更改
+
+通信指令システムのサーバ更改において、認証・ドメインサーバの構築を担当しました。
+
+##### 役割
+
+- サーバ設定における詳細設計、構築、テスト、リリース
+
+##### 実績・ポイント
+
+- サーバ構築について、OS セットアップ(Windows Server 2012R2)、ネットワーク設定、ミドルウェアインストール、Active Directory 設定、業務アプリケーション設定、サーバリリースを担当しました。
 
 ## スキル
 
 ### 言語
 
-- Python (v3 系)
-  - バッチ開発で 2 年経験
-- Java
-  - フロントエンド(Java FX)、バックエンド開発のために 5 年経験
-- PHP
-  - バックエンドで 1 年経験。FW は FuelPHP を利用
-- JavaScript
-  　- フロントエンド開発、AWS Lambda のバッチ開発のために 計 1 年ほど経験。jQuery, Backbone.js を利用
-- VB
-  - SIer 時代に、業務改善のために半年ほど経験
-- Shell
-  - バッチ開発のために 5 年経験
+| 言語       | 経験                                                                                            |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| Python3    | バッチ開発で 2 年経験                                                                           |
+| Java       | フロントエンド(Java FX)、バックエンド開発のために 5 年経験                                      |
+| PHP        | バックエンドで 1 年経験。FW は FuelPHP を利用                                                   |
+| JavaScript | フロントエンド開発、AWS Lambda のバッチ開発のために 計 1 年ほど経験。jQuery, Backbone.js を利用 |
+| Shell      | バッチ開発のために 5 年経験                                                                     |
 
 ### インフラ
 
-- Docker
-- Terraform
-- Fluentd
-- Mackerel
-- datadog
+- OS ... Windows, Linux (CentOS, RHEL7), MacOS
+- ツール ... Docker, Terraform, Fluentd, Mackerel, datadog
 
-#### データベース
+### データベース
 
-- Oracle (11, 12c)
-- MySQL(5.7)
+5 年経験
 
-#### AWS
+- Oracle (11, 12c), MySQL(5.6)
 
-以下のマネージドサービスを実務にて経験、Terraform などを用いてコード化
+### AWS
 
-- EC2
-- ECS(Fargate)
-- ECR
-- S3
-- Lambda
-  - Python3.7, JavaScript で実装
-- CloudWatch
-- SNS
-- SES
-- Route 53
-- CodeDeploy
-- RDS
-- AWS Simple System Manager
-  - パラメータストアを主に
-- IAM
+2 年経験
 
-### その他
+- EC2, ECS(Fargate), ECR, S3, Lambda, Stepfunctions, CloudWatch, SNS, SES, Route 53, API Gateway, CodeDeploy, DynamoDB, RDS, SSM Parameter Store, IAM
 
-- Github, Gitlab
-- CircleCI
-- serverlessframework
-  - AWS Lambda のデプロイに利用
-- Coverity
-  - SIer 時代に、Java の静的コード解析
+### その他ツール
+
+- Github, Gitlab, CircleCI, Jenkins, serverless framework, Coverity, JIRA, Redmine
 
 ## 自分の強み
 
@@ -84,103 +146,17 @@
 - マイクロサービスの開発・運用
 - サーバレスアーキテクチャ
 
-## 職務経歴
-
-### 2019/04 - 現在 : インターネット広告系企業
-
-#### 担当プロジェクトと業務
-
-- SSP の商材管理システムの開発・運用
-
-  - アプリケーションのバックエンドは PHP7.0(FuelPHP), フロントエンドは JavaScript(jQuery, Backbone.js), Shell を使用
-  - インフラは AWS EC2 + CLB, RDS(MySQL), SES
-  - 追加機能開発
-    - 要件定義
-    - ユースケース検討・定義
-    - UI 設計
-    - 基本設計・詳細設計
-    - フロントエンド開発
-    - データベース設計
-    - バックエンド開発
-    - 実装
-    - オフショアとの開発調整(英語)
-    - テストケース作成とテスト
-  - CI/CD の導入
-    - 手動シェル実行リリースから Github + CircleCI + Slack を用いた自動ビルド・デプロイ
-    - 動かないテストコードの改修と自動テスト
-  - 監視設計
-    - アプリケーションログを監視しておらず、クリティカルなエラーに気づけなかったため Fluentd + CloudWatchLogs + Lambda + Slack を用いたアプリケーションログ監視を設計・構築
-
-- SSP の開発・運用
-  - バックエンドは Java8, Python3.7, フロントエンドは JavaScript を使用
-  - インフラは CentOS(VM) + MySQL(VM), AWS(S3, SES, Lambda)
-  - AWS のマルチアカウントのマルチアカウントを採用するため、スイッチロールを用いたアカウント切り替え対応
-  - TLS 1.2 へ対応するため、リバースプロキシの構築
-  - オンプレミスから AWS への移行
-    - バッチの移行
-      - 現行仕様調査
-      - 技術選定
-      - サービスアーキテクチャ検討
-      - インフラストラクチャ設計
-      - インフラストラクチャ構築
-        - Terraform のコード化
-      - CI/CD 設計
-        - Github + CircleCI + Slack を用いた自動ビルド・デプロイ
-      - 監視設計
-        - CloudWatchLogs + Lambda + Slack を用いたアラート通知
-        - datadog を用いたメトリクス取得とメトリクスダッシュボード作成
-    - 既存 AWS リソースのコード化
-
-### 2015/04 - 2019/03: メーカー系 SIer
-
-職務: システムエンジニア
-
-#### 担当プロジェクトと業務
-
-- 官公庁向け大規模プロジェクトの開発・運用
-  - 5 ヶ年のプロジェクト
-  - アプリケーションは Java8, フロントエンドは Java FX を使用
-  - バッチは Shell, Python3.2 を使用
-  - インフラはサーバが RUEL, Windows Server 2012,2016, クライアントが Windows 10 Enterprise
-  - 201507 - 201603
-    - 基本設計
-    - 要件定義
-    - ユースケース検討・定義
-    - 認証・ドメインサーバ (Window Server 2012 R2)構築
-      - OS セットアップ、ネットワーク設定、ミドルウェア、Actice Directory 設定、業務アプリケーション設定
-  - 201604 - 201703
-    - PJ ルームの引っ越し
-      - レイアウト
-      - ネットワーク 設計
-    - 詳細設計
-    - UI 設計
-      - 画面モックの作成・仕様調整 (Java8 + JavaFX)
-    - Git + Jenkins + Coverity による継続的デプロイ環境の導入提案、構築
-      - Subversion からの脱却
-  - 201704 - 201803
-    - 監視アプリケーション
-      - フロントエンド、バックエンド開発 (Java8 + JavaFX)
-      - データベース設計
-      - テスト設計（テストケース、単体テスト、結合テスト）
-    - 監視アプリケーションの工数・進捗管理
-    - 開発拠点間 VPN 構築
-  - 201804 - 201903
-    - インフラ構築
-    - デプロイ自動化バッチ構築
-    - リリース前システムテスト
-    - リリース
-
 ## 業務外活動
 
 ### 取得資格
 
-| 名前                                        | 取得年月日 |
-| ------------------------------------------- | ---------- |
-| 応用情報技術者                              | 2010/06    |
-| マイクロソフト認定プロフェッショナル 70-410 | 2015/08    |
-| Oracle Master Bronze(11b)                   | 2015/10    |
-| 情報処理安全確保支援士                      | 2016/07    |
-| AWS 認定ソリューションアーキテクト          | 2020/06    |
+| 名前                                              | 取得年月日 |
+| ------------------------------------------------- | ---------- |
+| 応用情報技術者                                    | 2010/06    |
+| マイクロソフト認定プロフェッショナル 70-410       | 2015/08    |
+| Oracle Master Bronze(11b)                         | 2015/10    |
+| 情報処理安全確保支援士                            | 2016/07    |
+| AWS 認定ソリューションアーキテクト - アソシエイト | 2020/06    |
 
 ## 参考
 
