@@ -27,7 +27,7 @@
 ##### 環境
 
 - バックエンドは Java8, Python3.7, フロントエンドは JavaScript
-- インフラは オンプレミスが CentOS(VM) + MySQL(VM), Mackerel,移行先は ECS, EFS, Aurora, Lambda, S3, API Gateway, Route53, SES, CloudWatch, SSM Parameter Store, Fastly, datadog
+- インフラは オンプレミスが CentOS(VM) + MySQL(VM), Mackerel,移行先は ECS, EFS, Aurora, DynamoDB, Lambda, Stepfunctions, S3, API Gateway, Route53, ALB, SES, CloudWatch, SSM Parameter Store, Fastly, datadog
 
 ##### 実績・ポイント
 
@@ -125,7 +125,7 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 
 2 年経験
 
-- EC2, ECS(Fargate), ECR, S3, Lambda, Stepfunctions, CloudWatch, SNS, SES, Route 53, API Gateway, CodeDeploy, DynamoDB, RDS, SSM Parameter Store, IAM
+- EC2, ECS(Fargate), ECR, S3, Lambda, Stepfunctions, CloudWatch, SNS, SES, Route53, ALB, API Gateway, CodeDeploy, DynamoDB, RDS, SSM Parameter Store, IAM
 
 ### その他ツール
 
