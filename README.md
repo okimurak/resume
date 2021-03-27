@@ -125,7 +125,7 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 
 2 年経験
 
-- EC2, ECS(Fargate), ECR, S3, Lambda, Stepfunctions, CloudWatch, SNS, SES, Route53, ALB, API Gateway, CodeDeploy, DynamoDB, RDS, SSM Parameter Store, IAM
+- EC2, ECS(Fargate), ECR, S3, Lambda, Stepfunctions, CloudWatch, SNS, SES, EventBridge, Route53, ALB, API Gateway, CodeDeploy, DynamoDB, RDS, SSM Parameter Store, IAM
 
 ### その他ツール
 
@@ -135,16 +135,17 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 
 - 面白そうと思ったことに対して、すぐに実践
   - メモ・ドキュメントを残す
-- カイゼン活動。無理・強要はしない
-- やったことがないもの（技術によらず）への興味
+- 定形作業の自動化
+- 未経験の技術分野への興味
 
 ## 興味があるもの
 
 - AWS を用いたシステム構築
+- コンテナ
 - Kurbernetes を使った実務でのインフラ構築
-- CI/CD
+- CI/CD パイプラインの構築
 - マイクロサービスの開発・運用
-- サーバレスアーキテクチャ
+- イベントドリブンのアーキテクチャ
 
 ## 業務外活動
 
