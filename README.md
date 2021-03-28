@@ -4,7 +4,7 @@
 
 | 項目   | 内容                                                                                                             |
 | ------ | ---------------------------------------------------------------------------------------------------------------- |
-| 名前   | 沖村　光一郎(Koichiro Okimura)                                                                                   |
+| 名前   | 沖村  光一郎(Koichiro Okimura)                                                                                   |
 | Email  | [okimurak0901@gmail.com](mailto:okimurak0901@gmail.com)                                                          |
 | Blog   | [https://okimurak.github.io/](https://okimurak.github.io/), Qiita : [@okky_eng](https://qiita.com/okky_eng)      |
 | Github | [okimurak](https://github.com/okimurak)                                                                          |
