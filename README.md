@@ -33,7 +33,13 @@ SSP とは、媒体の広告枠販売や広告収益の最大化を支援する�
 - フロントエンド : JavaScript
 - インフラ
   - オンプレミス : CentOS(VM) + MySQL(VM), Mackerel
-  - クラウド : ECS, EFS, Aurora, DynamoDB, Lambda, Stepfunctions, S3, API Gateway, Route53, SES, CloudWatch, EventBridge, SSM Parameter Store, Fastly, datadog
+  - クラウド
+    - アプリケーション実行基盤 : ECS, Lambda, Stepfunctions
+    - DB : Aurora, DynamoDB
+    - Storage : S3, EFS
+    - Network : VPC, API Gateway, Route53, Fastly
+    - ログ・監視 : CloudWatch, datadog
+    - その他 : SES, EventBridge, SSM Parameter Store
 - 開発規模は 14 名
 
 ##### 実績・ポイント
@@ -90,14 +96,14 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 - インフラ
   - サーバ : RHEL7, Windows Server 2016
   - クライアント : Windows 10 Enterprise
-  - ミドルウェア は Oracle 12c, WebLogic
+  - ミドルウェア : Oracle 12c, WebLogic
 - 開発規模は 100 名 (チーム規模 3 名, 10 チーム)
 
 
 ##### 実績・ポイント
 
 - お客様との要件齟齬を防ぐため、プロトタイプを開発しながら要件・機能確認を繰り返し行う形で進めました。
-  - Java FX による UI のモックを作成して画面設計を行い、お客様と調整を行いました。またその後に、内部ロジックを追加してお客様にデモを行いながら機能確認と追加改修を行いました。
+  - Java FX による UI のモックを作成して画面設計を行い、お客様と調整をしました。またその後に、内部ロジックを追加してお客様にデモを行いながら機能確認と追加改修を行いました。
 - 開発業務の効率化のため、ソースコードについては Subversion から Git + Jenkins + Coverity による継続的デプロイ環境の提案、導入、構築をしました。
 - 運用監視システムのリーダーとしてメンバーの工数管理をしつつ、開発実装も担当しました。
 - プロジェクトの新人オンボーディング資料が無かったため 1 ヶ月程度掛かっていましたが、独自に新人教育用の資料を作成することで、2 週間程度に抑えることができました。資料は、サンプルコードや実装例を含めたプログラミング課題（電卓作成）を作成しました。
@@ -112,7 +118,8 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 
 ##### 実績・ポイント
 
-- サーバ構築について、OS セットアップ(Windows Server 2012R2)、ネットワーク設定、ミドルウェアインストール、Active Directory 設定、業務アプリケーション設定、サーバリリースを担当しました。
+- Windows Server 2012R2 セットアップ、ネットワーク設定、ミドルウェアインストール、Active Directory 設定、業務アプリケーション用設定、リリースを担当しました。
+- 大学では無線ネットワーク分野を研究しており、研究で学んだ TCP/IP の知識を活かしてサーバ構築をしました。
 
 ## スキル
 
@@ -123,7 +130,7 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 | Python3    | バッチ開発で 2 年経験                                                                           |
 | Java       | フロントエンド(Java FX)、バックエンド開発のために 5 年経験                                      |
 | PHP        | バックエンドで 1 年経験。FW は FuelPHP を利用                                                   |
-| JavaScript | フロントエンド開発、AWS Lambda のバッチ開発のために 計 1 年ほど経験。jQuery, Backbone.js を利用 |
+| JavaScript | フロントエンド開発、AWS Lambda のバッチ開発のために計 1 年ほど経験。jQuery, Backbone.js を利用 |
 | Shell      | バッチ開発のために 5 年経験                                                                     |
 
 ### インフラ
@@ -133,15 +140,19 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 
 ### データベース
 
-6 年経験
-
+- 6 年経験
 - Oracle (11, 12c), MySQL(5.6)
 
 ### AWS
 
-2 年経験
-
-- EC2, ECS(Fargate), ECR, S3, Lambda, Stepfunctions, CloudWatch, SNS, SES, EventBridge, Route53, ALB, API Gateway, CodeDeploy, DynamoDB, RDS, SSM Parameter Store, IAM
+- 2 年経験
+- Compute : EC2, ECS(Fargate), ECR, Lambda
+- DB : DynamoDB, RDS, Aurora(MySQL)
+- Storage : S3, EFS
+- CI/CD : CodeDeploy
+- Network : VPC, Route53, ALB, API Gateway
+- ログ・監視 : CloudWatch
+- その他 : Stepfunctions, SNS, SES, EventBridge, SSM Parameter Store, IAM
 
 ### その他ツール
 
@@ -170,7 +181,7 @@ PMP(Private Marcket Place) で用いる商材情報を管理するためのシ�
 | 名前                                              | 取得年月日 |
 | ------------------------------------------------- | ---------- |
 | 応用情報技術者                                    | 2010/06    |
-| マイクロソフト認定プロフェッショナル 70-410       | 2015/08    |
+| Microsoft 認定プロフェッショナル 70-410       | 2015/08    |
 | Oracle Master Bronze(11b)                         | 2015/10    |
 | 情報処理安全確保支援士                            | 2016/07    |
 | AWS 認定ソリューションアーキテクト - アソシエイト | 2020/06    |
