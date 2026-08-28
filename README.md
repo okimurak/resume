@@ -32,6 +32,10 @@
 
 - [20251121 AWS CDK ブートストラップエラー解決ガイド - Speaker Deck](https://speakerdeck.com/okimurak/20251121-aws-cdk-butosutoratupuerajie-jue-gaido)
 
+#### 外部記事
+
+- [Extending Amazon ECS Express Mode to Build an Optimal Container Environment](https://aws.amazon.com/jp/blogs/containers/extending-amazon-ecs-express-mode-to-build-an-optimal-container-environment/)
+
 ### 2019/04 - 2021/06 : インターネット広告系企業
 
 - 職位 : Web エンジニア
